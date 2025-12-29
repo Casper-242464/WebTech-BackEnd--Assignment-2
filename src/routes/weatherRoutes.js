@@ -5,7 +5,7 @@ const router = express.Router();
 router
     .route('/api/weather')
         .get((req, res) => {
-
+            res.render('index');
         })
         .post((req, res) => {
             

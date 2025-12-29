@@ -9,9 +9,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 
-const manageRoutes = require('./routes/manageRoutes');
+const weatherRoutes = require('./routes/weatherRoutes');
 
-app.use('/', manageRoutes);
+app.use('/', weatherRoutes);
 
 
 app.listen(port, () => {
