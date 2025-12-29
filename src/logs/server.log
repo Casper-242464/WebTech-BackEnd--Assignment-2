@@ -1,0 +1,7 @@
+Time: [2025-12-29T17:42:33.382Z], Method: GET, URL: /, IP: ::1
+Time: [2025-12-29T17:43:10.476Z], Method: GET, URL: /, IP: ::1
+Time: [2025-12-29T17:43:11.607Z], Method: GET, URL: /, IP: ::1
+Time: [2025-12-29T17:43:14.022Z], Method: GET, URL: /, IP: ::1
+Time: [2025-12-29T17:45:54.313Z], Method: GET, URL: /api/weather, IP: ::1
+Time: [2025-12-29T17:49:00.897Z], Method: GET, URL: /api/weather, IP: ::1
+Time: [2025-12-29T17:49:01.210Z], Method: GET, URL: /favicon.ico, IP: ::1

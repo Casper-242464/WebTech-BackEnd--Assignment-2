@@ -10,6 +10,8 @@ const logger = (req, res, next) => {
     fs.appendFile(path.join(__dirname, '..', 'logs', 'server.log'), log, (err) => {
         if (err) {console.error('Logging Failed', err);}
     });
+
+    next();
 };
 
 module.exports = logger;
