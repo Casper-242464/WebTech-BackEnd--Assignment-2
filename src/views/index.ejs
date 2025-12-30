@@ -9,6 +9,32 @@
 </head>
 <!---------- BODY ---------->
 <body>
-    Hello, World!
+    <main class="container">
+        <header>
+            <h1>Weather</h1>
+            <p>Get current weather for any city or ZIP.</p>
+        </header>
+
+        <section class="search">
+            <form id="weather-form">
+                <input id="address" name="address" type="text" placeholder="Enter city or ZIP" required autocomplete="off">
+                <button type="submit">Get Weather</button>
+            </form>
+            <p id="status" class="muted"></p>
+        </section>
+
+        <section id="result" class="result hidden">
+            <h2 id="location"></h2>
+            <div class="now">
+                <img id="icon" alt="weather icon" src="" class="icon hidden">
+                <div class="details">
+                    <p id="summary"></p>
+                    <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                    <p><strong>Wind:</strong> <span id="wind"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

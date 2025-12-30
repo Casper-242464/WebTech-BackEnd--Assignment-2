@@ -2,7 +2,7 @@ const axios = require('axios');
 const API_KEY = '86485b1dcfa2b6e61f076ae785873115';
 const API_URL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=' + API_KEY;
 
-exports.getWeatherData = async () => {
+exports.getWeatherData = async (city) => {
     try {
         const response = await axios.get(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
 
