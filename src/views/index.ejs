@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/weather.js" defer></script>
 </head>
 <!---------- BODY ---------->
 <body>
@@ -30,10 +31,21 @@
                 <div class="details">
                     <p id="summary"></p>
                     <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                    <p><strong>Feels like:</strong> <span id="feels_like"></span></p>
                     <p><strong>Humidity:</strong> <span id="humidity"></span></p>
                     <p><strong>Wind:</strong> <span id="wind"></span></p>
+                    <p><strong>Rain (1h):</strong> <span id="rain"></span></p>
+                    <p><strong>Coordinates:</strong> <span id="coords"></span></p>
+                    <p>
+                        <button id="add-fav" class="fav-btn hidden">Add to favorites</button>
+                    </p>
                 </div>
             </div>
+        </section>
+
+        <section id="favorites" class="result">
+            <h3>Favorites</h3>
+            <ul id="fav-list" class="fav-list"></ul>
         </section>
     </main>
 </body>
